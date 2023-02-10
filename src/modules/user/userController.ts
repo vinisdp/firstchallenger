@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { IUser } from "./IUser";
+import { IUser } from "./userInterface";
 
 const users: IUser[] = [];
 
