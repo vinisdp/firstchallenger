@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { userCreate, userIndex } from "./userController.js";
+import { singIn, singUp, userIndex } from "./userController.js";
 
 export const userRouter = Router();
 userRouter.get("/", userIndex);
-userRouter.post("/singup", userCreate);
+userRouter.post("/singup", singUp);
+userRouter.post("/singin", singIn);

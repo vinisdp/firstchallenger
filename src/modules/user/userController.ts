@@ -1,29 +1,13 @@
-import { Request, Response} from "express";
-
-interface IUser {
-  firstName: string;
-  lastName: string;
-  birthDate: string;
-  city: string;
-  country: string;
-  email: string;
-  password: string;
-  confirmPassword: string;
-}
+import { Request, Response } from "express";
+import { IUser } from "./IUser";
 
 const users: IUser[] = [];
 
-export const userIndex = async (
-  req: Request,
-  res: Response,
-) => {
+export const userIndex = async (req: Request, res: Response) => {
   res.json(users);
 };
 
-export const userCreate = async (
-  req: Request,
-  res: Response,
-) => {
+export const singUp = async (req: Request, res: Response) => {
   const {
     firstName,
     lastName,
@@ -32,7 +16,7 @@ export const userCreate = async (
     country,
     email,
     password,
-    confirmPassword
+    confirmPassword,
   } = req.body;
   const user: IUser = {
     firstName,
@@ -42,17 +26,19 @@ export const userCreate = async (
     country,
     email,
     password,
-    confirmPassword
+    confirmPassword,
   };
   users.push(user);
   res.json(user);
 };
 
-export const userView = async (req: Request, res: Response) => {
-  const { email, password } = req.params;
+export const singIn = async (req: Request, res: Response) => {
+  const { email, password } = req.body;
 
-  const user = users.find((user) => user.email === email);
-
+  const user = users.find(
+    (user) => user.email === email && user.password === password
+  );
+  console.log(user);
   res.json(user);
 };
 
