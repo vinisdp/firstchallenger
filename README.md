@@ -3,4 +3,4 @@
 #Instalação do Yarn
 <h3>Passo 1:</h3>
 <p>Após intalação do node.js em sua maquina execute o comando da imagem<p>
-  ![image](https://user-images.githubusercontent.com/83310782/218369288-c554fa52-ec6c-4028-b0ac-02dfb83b4483.png)
+![Linha de comando yarn](https://user-images.githubusercontent.com/83310782/218369527-dc8c415b-4f44-47ff-a69c-d74b45904998.png)
