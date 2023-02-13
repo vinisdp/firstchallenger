@@ -48,7 +48,7 @@
       "lastName": "Silva",
       "birthDate": "07-10-1998",
       "city": "Bauru",
-      "country": "SP",
+      "country": "Brasil",
       "email": "vini@vini.com",
       "password": "123",
       "confirmPassword": "123"
