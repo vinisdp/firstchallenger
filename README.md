@@ -3,4 +3,8 @@
 #Instalação do Yarn
 <h3>Passo 1:</h3>
 <p>Após intalação do node.js em sua maquina execute o comando da imagem<p>
-![Screenshot_1](https://user-images.githubusercontent.com/83310782/218369660-070461fa-9e04-461d-bb6f-eb0385cb4b80.png)
+    {% filename %}command-line{% endfilename %}
+    > git init
+    Initialized empty Git repository in ~/djangogirls/.git/
+    > git config --global user.name "Seu Nome"
+    > git config --global user.email voce@exemplo.com
