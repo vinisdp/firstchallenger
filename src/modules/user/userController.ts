@@ -38,14 +38,11 @@ export const singIn = async (req: Request, res: Response) => {
   const user = users.find(
     (user) => user.email === email && user.password === password
   );
-  res.json(user);
+  if (!user) {
+    return res.status(401).json({ message: "Invalid Credentials" });
+  } else {
+    res.json(user);
+  }
+
 };
 
-export const userDelete = async (req: Request, res: Response) => {
-  const { email } = req.params;
-
-  const userDel = users.findIndex((user) => user.email === email);
-
-  users.splice(userDel, 1);
-  res.json({ message: "User deleted!" });
-};

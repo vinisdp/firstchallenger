@@ -5,6 +5,6 @@ export const eventRouter = Router();
 eventRouter.post("/", eventCreate);
 eventRouter.get("/", eventBusca);
 eventRouter.delete("/:id", eventDeleteId);
-eventRouter.delete("/:day", eventDeleteDayOfTheWeek);
+eventRouter.delete("/", eventDeleteDayOfTheWeek);
 
-eventRouter.get("/:id",buscaID);
+eventRouter.get("/:id", buscaID);
