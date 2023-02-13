@@ -4,4 +4,8 @@
 <h3>Passo 1:</h3>
 <p>Após intalação do node.js em sua maquina execute o comando:<p>
     
-    $npm install --global yarn 
+    $ npm install --global yarn 
+    
+<p>Para verificar se a instalação ocorreu de acordo execute o comando:<p>
+    
+    $ yarn --version
