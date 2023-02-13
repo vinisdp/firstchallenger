@@ -54,3 +54,25 @@
       "confirmPassword": "123"
     }
     
+<h4>SingIn<h4>
+<p>localhost:3000/api/v1/user/singin para utilizar essa rota basta ir no postman e utilizar o metodo post selecionar a opção body e mudar para json, em seguida adicionar no corpo o seguinte json:<p>
+    
+    {
+      "email": "vini@vini.com",
+      "password": "123"
+    }
+    
+<h4>Criação de Eventos<h4>
+<p>localhost:3000/api/v1/events/ para utilizar essa rota basta ir no postman e utilizar o metodo post selecionar a opção body e mudar para json, em seguida adicionar no corpo o seguinte json:<p>
+    
+    {
+       "description":"Prova de alg2",
+       "dateTime":"2022-11-10T14:47:32.92Z"
+    }
+    
+<h3>Rotas Get</h3>
+<h4>Busca de eventos<h4>
+<p>Existem três maneiras de utilizar a busca, localhost:3000/api/v1/events/:id é uma delas onde buscará um evento atraves de um id especifico, outra forma é a busca geral onde basta bater a rota padrão localhost:3000/api/v1/events/ onde ela retornará todos os eventos e por fim a busca por dia da semana basta acessar a rota padrão  da seguinte localhost:3000/api/v1/events?diaOfTheWeek=Monday (monday é apenas um exemplo poderia ser qualquer dia da semana) essa busca retornará todos os eventos agendados no dia que foi fornecido na query<p>
+<h3>Rotas Delete</h3>
+<h4>Remoção de eventos<h4>
+<p>Existem duas rotas para deletar eventos a primeira é por dia da semana basta colocar o postman em delete e bater a seguinte rota localhost:3000/api/v1/events?diaOfTheWeek=Monday (lembrando que monday é meramente ilustrativo) isso deletará todos os eventos que foram cadastrados naquele dia da semana e a outra opição é por id localhost:3000/api/v1/events/:id onde irá deletar o evento pertencente ao id</p>
