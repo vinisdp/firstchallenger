@@ -38,7 +38,6 @@ export const singIn = async (req: Request, res: Response) => {
   const user = users.find(
     (user) => user.email === email && user.password === password
   );
-  console.log(user);
   res.json(user);
 };
 

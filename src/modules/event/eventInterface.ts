@@ -1,6 +1,6 @@
 export interface IEvent {
   description: string;
-  dataTime: Date;
+  dateTime: Date;
   createAt: Date;
   id: string;
 }

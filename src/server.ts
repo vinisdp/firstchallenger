@@ -10,7 +10,7 @@ app.get("/api/v1", (req, res) => {
   res.send("Hello World");
 });
 app.use("/api/v1/user", userRouter);
-app.use("/api/v1/events",eventRouter);
+app.use("/api/v1/events", eventRouter);
 app.listen(3000, () => {
   console.log("Server started on port 3000!");
 });
