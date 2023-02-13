@@ -39,4 +39,18 @@
     npm i @types/uuid
     
 <h2>Utilização da API<h2>
+<h3>Rotas Post</h3>
+<h4>SingUP<h4>
+<p>localhost:3000/api/v1/user/singup para utilizar essa rota basta ir no postman e utilizar o metodo post selecionar a opção body e mudar para json, em seguida adicionar no corpo o seguinte json<p>
+    
+    {
+      "firstName": "Vinicius",
+      "lastName": "Silva",
+      "birthDate": "07-10-1998",
+      "city": "Bauru",
+      "country": "SP",
+      "email": "vini@vini.com",
+      "password": "123",
+      "confirmPassword": "123"
+    }
     
